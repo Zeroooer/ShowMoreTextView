@@ -31,75 +31,75 @@
 @implementation UITextView (ScalablePrivate)
 
 - (NSString *)sp_tailWord {
-    return objc_getAssociatedObject(self.class, _cmd);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)setSp_tailWord:(NSString *)sp_tailWord {
-    objc_setAssociatedObject(self.class, @selector(sp_tailWord), sp_tailWord, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(sp_tailWord), sp_tailWord, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSInteger)sp_limitLineCount {
-    return [objc_getAssociatedObject(self.class, _cmd) integerValue];
+    return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
 - (void)setSp_limitLineCount:(NSInteger)sp_limitLineCount {
-    objc_setAssociatedObject(self.class, @selector(sp_limitLineCount), @(sp_limitLineCount) , OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_limitLineCount), @(sp_limitLineCount) , OBJC_ASSOCIATION_RETAIN);
 }
 
 - (NSAttributedString *)sp_originAttributedText {
-    return objc_getAssociatedObject(self.class, _cmd);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)setSp_originAttributedText:(NSAttributedString *)sp_originAttributedText {
-    objc_setAssociatedObject(self.class, @selector(sp_originAttributedText), sp_originAttributedText, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(sp_originAttributedText), sp_originAttributedText, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSInteger)sp_cuttedIndex {
-    return [objc_getAssociatedObject(self.class, _cmd) integerValue];
+    return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
 - (void)setSp_cuttedIndex:(NSInteger)sp_cuttedIndex {
-    objc_setAssociatedObject(self.class, @selector(sp_cuttedIndex), @(sp_cuttedIndex) , OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_cuttedIndex), @(sp_cuttedIndex) , OBJC_ASSOCIATION_RETAIN);
 }
 
 - (NSInteger)sp_currentLine {
-    return [objc_getAssociatedObject(self.class, _cmd) integerValue];
+    return [objc_getAssociatedObject(self, _cmd) integerValue];
 }
 
 - (void)setSp_currentLine:(NSInteger)sp_currentLine {
-    objc_setAssociatedObject(self.class, @selector(sp_currentLine), @(sp_currentLine) , OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_currentLine), @(sp_currentLine) , OBJC_ASSOCIATION_RETAIN);
 }
 
 - (CGFloat)sp_lastCharacterY {
-    return [objc_getAssociatedObject(self.class, _cmd) floatValue];
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
 
 - (void)setSp_lastCharacterY:(CGFloat)sp_lastCharacterY {
-    objc_setAssociatedObject(self.class, @selector(sp_lastCharacterY), @(sp_lastCharacterY), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_lastCharacterY), @(sp_lastCharacterY), OBJC_ASSOCIATION_RETAIN);
 }
 
 - (CGFloat)sp_expandHeight {
-    return [objc_getAssociatedObject(self.class, _cmd) floatValue];
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
 
 - (void)setSp_expandHeight:(CGFloat)sp_expandHeight {
-    objc_setAssociatedObject(self.class, @selector(sp_expandHeight), @(sp_expandHeight), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_expandHeight), @(sp_expandHeight), OBJC_ASSOCIATION_RETAIN);
 }
 
 - (CGFloat)sp_foldHeight {
-    return [objc_getAssociatedObject(self.class, _cmd) floatValue];
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
 
 - (void)setSp_foldHeight:(CGFloat)sp_foldHeight {
-    objc_setAssociatedObject(self.class, @selector(sp_foldHeight), @(sp_foldHeight), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_foldHeight), @(sp_foldHeight), OBJC_ASSOCIATION_RETAIN);
 }
 
 - (BOOL)sp_isFold {
-    return [objc_getAssociatedObject(self.class, _cmd) boolValue];
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
 - (void)setSp_isFold:(BOOL)sp_isFold {
-    objc_setAssociatedObject(self.class, @selector(sp_isFold), @(sp_isFold), OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(sp_isFold), @(sp_isFold), OBJC_ASSOCIATION_RETAIN);
 }
 
 @end
@@ -107,11 +107,11 @@
 @implementation UITextView (Scalable)
 
 - (HeightDidChangedBlock)sp_heightDidChangedBlock {
-    return objc_getAssociatedObject(self.class, _cmd);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)setSp_heightDidChangedBlock:(HeightDidChangedBlock)sp_heightDidChangedBlock {
-    objc_setAssociatedObject(self.class, @selector(sp_heightDidChangedBlock), sp_heightDidChangedBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(sp_heightDidChangedBlock), sp_heightDidChangedBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 #pragma mark - public
